@@ -1,0 +1,190 @@
+body {
+    display: flex;
+    flex-direction: column; /* 改為垂直排列 */
+    background-image: url("../assets/background.jfif");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.head-container {
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: rgb(220, 201, 188); */
+}
+
+.head-img {
+    width: 50px;
+    padding: 5px;
+}
+
+.head-text {
+    text-align: center;
+    flex: 1;
+    -webkit-text-stroke: 1.5px #efe4d1;
+    text-shadow: -1px -1px 0 #efe4d1,
+              1px -1px 0 #efe4d1,
+              -1px 1px 0 #efe4d1,
+              1px 1px 0 #efe4d1;
+    font-size: 48px;
+}
+
+.head-block {
+    background-color: lightgray;
+    padding: 1px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 180px); /* 每行 2 個卡片 */
+    gap: 20px;
+    justify-content: center; /* 卡片居中 */
+    width: auto; /* 根據卡片寬度自適應 */
+    padding-top: 3vh;
+}
+
+.card {
+    position: relative;
+    width: 180px;
+    height: 120px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* 順序標籤樣式 */
+.card .order-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card img.zoom {
+    position: fixed; /* 固定在屏幕上 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); /* 中心居中並放大 */
+    max-width: 60vw; /* 最大寬度為視口寬度 */
+    max-height: 30vh; /* 最大高度為視口高度 */
+    z-index: 9999; /* 保持在最上層 */
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.5); /* 可設置具體放大比例 */
+}
+
+.card.jump {
+    animation: jump 0.5s ease;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.answer-container {
+    position: absolute; /* 絕對定位 */
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    text-align: center;
+    height: 180px;
+    transform: translate(-50%, -50%); /* 使元素精確居中 */
+    background-color: white; /* 背景顏色 */
+    padding: 20px;
+    border: 2px solid #007BFF; /* 外框顏色 */
+    border-radius: 15px; /* 圓角效果 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+    z-index: 999; /* 設置 z-index */
+  }
+  
+  /* 設置 fieldset 內部元素 */
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+
+
+.btn-container{
+    padding-top: 3vh;
+    
+    text-align: center;
+}
+.btn,
+    .btn:focus {
+        position: relative;
+        min-width: 150px;
+        background-color: black;
+        border-radius: 4em;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition-duration: 0.4s;
+        margin: 0px 20px;
+        padding: 10px 20px;
+    }
+    .btn:hover {
+        background-color: #3A3A3A;
+        color: white;
+        transition-duration: 0.1s;
+    }
+    .btn:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        box-shadow: 0 0 10px 40px white;
+        border-radius: 4em;
+    }
+    .btn:active:after {
+        opacity: 1;
+        transition: 0s;
+        box-shadow: 0 0 0 0 rgb(3, 236, 166);
+    }
+    .btn:active {
+        top: 1px;
+    }

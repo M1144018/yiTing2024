@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Click Order Game</title>
+    <link rel="stylesheet" href="../css/orderGame.css">
+</head>
+<body class="body" >
+    <div class="head-container">
+        <img class="head-img" src="../assets/home-icon.png" onclick="backToHomePage()">
+        <div class="head-text">簡單版</div>
+        <img id="img-refresh" class="head-img" src="../assets/refresh-icon.png" onclick="doRefreshOrderList()">
+        <img id="img-present" class="head-img" src="../assets/present-icon.png" onclick="doRefreshOrderList()" hidden>
+    </div>
+    <div class="card-container" id ="card-container">
+    </div>
+    <div>
+        <div class="btn-container">
+            <button onclick="doRefreshOrderList()" class="btn">重製</button>
+            <button onclick="checkAnswer()" class="btn">送出答案</button>
+        </div>
+    </div>
+    <div class="answer-container" id="answer-container" hidden>
+        <fieldset>
+          <legend id = "ans-legend">這是第一排字</legend>
+          <p id = "ans-textFirst" >這是第二排字</p>
+          <p id = "ans-textSecond">這是第三排字</p>
+          <button id = "btn-again" onclick="doRefreshOrderList()">再一次</button>
+          <button id ="btn-home" onclick="backToHomePage()">回首頁</button>
+          <button id ="btn-picture"  onclick="nextBtnClick()" >回憶照片館</button>
+        </fieldset>
+      </div>
+    <script src="../js/orderGame.js"></script>
+</body>
+</html>

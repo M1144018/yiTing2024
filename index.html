@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Click Order Game</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        .body{
+            /* background-color: rgba(226, 205, 183, 0.872); */
+            background-image: url("./src/assets/background.jfif");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+        .btn-container{
+            padding-bottom: 5vh;
+            text-align: center;
+        }
+        .btn,
+        .btn:focus {
+            position: relative;
+            min-width: 200px;
+            min-height: 50px;
+            background-color: rgb(241, 205, 245);
+            border-radius: 7em;
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition-duration: 0.4s;
+            padding: 10px 20px;
+            border: none;
+        }
+            .btn:hover {
+                background-color: #f59494;
+                color: white;
+                transition-duration: 0.1s;
+            }
+            .btn:after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top:0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all 1.0s;
+                box-shadow: 0 0 10px 40px white;
+                border-radius: 4em;
+            }
+            .btn:active:after {
+                opacity: 1;
+                transition: 0s;
+                box-shadow: 0 0 0 0 rgb(220, 32, 120);
+            }
+            .btn:active {
+                top: 1px;
+            }
+     </style>
+</head>
+<body class="body">
+    <div class="container" id ="container">
+        <div class="btn-container">
+            <button onclick="doJpEasyOrdGame()" class="btn">簡單版</button>
+        </div>
+        <div class="btn-container">
+            <button onclick="doJpMedOrdGame()"class="btn">進階版</button>
+        </div>
+        <div class="btn-container">
+            <button onclick="doJpHardOrdGame()"class="btn">困難版</button>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+     <script>
+        function doJpEasyOrdGame(){
+            setTimeout(() => {
+                const level = "easy";
+                window.location.href = `./src/html/orderGame.html?level=${level}`;
+            },800)
+
+        }
+        function doJpMedOrdGame(){
+            setTimeout(() => {
+                const level = "medium";
+                window.location.href = `./src/html/orderGame.html?level=${level}`;
+            },800)
+
+        }
+        function doJpHardOrdGame(){
+            setTimeout(() => {
+                const level = "hard";
+                window.location.href = `./src/html/orderGame.html?level=${level}`;
+            },800)
+        }
+     </script>
+</body>
+</html>

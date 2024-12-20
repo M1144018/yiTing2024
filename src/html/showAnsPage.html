@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片和文字切換範例</title>
+    <link rel="stylesheet" href="../css/showAnsPage.css">
+</head>
+<body class="body" >
+    <div class="container">
+        <!-- <button id="prevBtn" class="nav-btn">上一組</button> -->
+
+        <div class="content-block">
+            <img id="image" src="https://via.placeholder.com/300" alt="圖片">
+            <div class="text-block">
+                <div id="text1" class="text-item"></div>
+                <div id="text2" class="text-item"></div>
+                <div id="text3" class="text-item"></div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id = "btn-next" onclick="doJpNextGame()" class="btn">下一關</button>
+        </div>
+        <div class="btn-container">
+            <button id = "btn-home" onclick="backToHomePage()"class="btn">回首頁</button>
+        </div>
+
+        <!-- <button id="nextBtn" class="nav-btn">下一組</button> -->
+    </div>
+
+    <script src="../js/showAnsPage.js"></script>
+</body>
+</html>
