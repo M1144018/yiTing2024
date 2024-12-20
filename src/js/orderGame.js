@@ -2,39 +2,39 @@
 let config = [
     {
         "model":"easy",
-        "ans":['1','2','3','4','5','6','7','8','9','10'],
+        "ans":['1','2','3','4','5','6','7','8'],
         "src": [
-            { "img": "https://pbs.twimg.com/profile_images/1701878932176351232/AlNU3WTK_400x400.jpg", "order": 1 },
-            { "img": "", "order": 2 },
-            { "img": "", "order": 3 },
-            { "img": "", "order": 4 },
-            { "img": "", "order": 5 },
-            { "img": "", "order": 6 },
-            { "img": "", "order": 7 },
-            { "img": "", "order": 8 },
+            { "img": "../assets/photo/easy/1.jpg", "order": 1 },
+            { "img": "../assets/photo/easy/2.jpg", "order": 2 },
+            { "img": "../assets/photo/easy/3.jpg", "order": 3 },
+            { "img": "../assets/photo/easy/4.jpg", "order": 4 },
+            { "img": "../assets/photo/easy/5.jpg", "order": 5 },
+            { "img": "../assets/photo/easy/6.jpg", "order": 6 },
+            { "img": "../assets/photo/easy/7.jpg", "order": 7 },
+            { "img": "../assets/photo/easy/8.jpg", "order": 8 },
           ],
         "key": 7
     
     },
     {
         "model":"medium",
-        "ans":['1','2','3','4','5','6','7','8','9','10'],
+        "ans":['1','2','3','4','5','6','7','8'],
         "src": [
-            { "img": "", "order": 1 },
-            { "img": "", "order": 2 },
-            { "img": "", "order": 3 },
-            { "img": "", "order": 4 },
-            { "img": "", "order": 5 },
-            { "img": "", "order": 6 },
-            { "img": "", "order": 7 },
-            { "img": "", "order": 8 },
+            { "img": "../assets/photo/medium/9.jpg", "order": 1 },
+            { "img": "../assets/photo/medium/10.jpg", "order": 2 },
+            { "img": "../assets/photo/medium/11.jpg", "order": 3 },
+            { "img": "../assets/photo/medium/12.jpg", "order": 4 },
+            { "img": "../assets/photo/medium/13.jpg", "order": 5 },
+            { "img": "../assets/photo/medium/14.jpg", "order": 6 },
+            { "img": "../assets/photo/medium/15.jpg", "order": 7 },
+            { "img": "../assets/photo/medium/16.jpg", "order": 8 },
           ],
         "key": 3
     
     },
     {
         "model":"hard",
-        "ans":[1,2,3,4,5,6,7,8,9,10],
+        "ans":['1','2','3','4','5','6','7','8'],
         "src": [
             { "img": "", "order": 1 },
             { "img": "", "order": 2 },

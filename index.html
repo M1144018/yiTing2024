@@ -7,16 +7,34 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
      <style>
         .body{
-            /* background-color: rgba(226, 205, 183, 0.872); */
             background-image: url("./src/assets/background.jfif");
-            background-size: cover; 
+            background-size: 100% 100%; 
             background-position: center; 
             background-repeat: no-repeat; 
+            height: 100vh; 
+            margin: 0; 
+            width: 100%; 
         }
+        .text-container {
+            
+            align-items: center; /* 垂直置中 */
+            text-align: center;
+          
+        }
+
+        .home-text {
+            padding-top: 12vh;
+            width: 300px; 
+            height: 300px; 
+            padding-bottom: 6vh;
+            text-align: center;
+        }
+
         .btn-container{
             padding-bottom: 5vh;
             text-align: center;
         }
+
         .btn,
         .btn:focus {
             position: relative;
@@ -63,6 +81,9 @@
      </style>
 </head>
 <body class="body">
+    <div class="text-container">
+        <img  class= "home-text" src ="src/assets/home-text.png"/>
+    </div>
     <div class="container" id ="container">
         <div class="btn-container">
             <button onclick="doJpEasyOrdGame()" class="btn">簡單版</button>
