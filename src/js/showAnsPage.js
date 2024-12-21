@@ -135,7 +135,7 @@ function updateContent() {
     document.getElementById("image").src = image;
     document.getElementById("text1").textContent = text1;
     document.getElementById("text2").textContent = text2;
-    document.getElementById("text3").textContent = text3;
+    // document.getElementById("text3").textContent = text3;
 }
 
 function showNext() {
