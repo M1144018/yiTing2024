@@ -96,23 +96,45 @@ let config = [
         "src":
             [
                 {
-                    image: "https://via.placeholder.com/300/ff7f7f",
-                    text1: "文字組 1 - A",
-                    text2: "文字組 1 - B",
-                    text3: "文字組 1 - C"
+                    image: "../assets/photo/hard/17o.jpg",
+                    text1: "2020年8月20日",
+                    text2: "Xpark",
                 },
                 {
-                    image: "https://via.placeholder.com/300/7fff7f",
-                    text1: "文字組 2 - A",
-                    text2: "文字組 2 - B",
-                    text3: "文字組 2 - C"
+                    image: "../assets/photo/hard/18o.jpg",
+                    text1: "2021年1月1日",
+                    text2: "統一時代百貨",
                 },
                 {
-                    image: "https://via.placeholder.com/300/7f7fff",
-                    text1: "文字組 3 - A",
-                    text2: "文字組 3 - B",
-                    text3: "文字組 3 - C"
-                }
+                    image: "../assets/photo/hard/19o.jpg",
+                    text1: "2021年4月2日",
+                    text2: "木柵動物園",
+                },
+                {
+                    image: "../assets/photo/hard/20o.jpg",
+                    text1: "2021年11月4日",
+                    text2: "桃園青埔萬聖城",
+                },
+                {
+                    image: "../assets/photo/hard/21o.jpg",
+                    text1: "2022年7月26日",
+                    text2: "八斗子高地",
+                },
+                {
+                    image: "../assets/photo/hard/22o.jpg",
+                    text1: "2022年8月11日",
+                    text2: "Makers'Base",
+                },
+                {
+                    image: "../assets/photo/hard/23o.jpg",
+                    text1: "2023年6月14日",
+                    text2: "星月天空夜景",
+                },
+                {
+                    image: "../assets/photo/hard/24o.jpg",
+                    text1: "2023年6月29日",
+                    text2: "瀑布3號",
+                },
             ]
     },
 ];
