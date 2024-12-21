@@ -162,7 +162,7 @@ body {
         min-width: 100px;
         background-color: black;
         border-radius: 4em;
-        color: white;
+        background-color: rgb(241, 205, 245);
         font-size: 1rem;
         font-weight: bold;
         text-align: center;
@@ -171,9 +171,10 @@ body {
         transition-duration: 0.4s;
         margin: 0px 20px;
         padding: 10px 20px;
+        border: none;
     }
     .btn:hover {
-        background-color: #3A3A3A;
+        background-color: #f59494;
         color: white;
         transition-duration: 0.1s;
     }
@@ -193,7 +194,7 @@ body {
     .btn:active:after {
         opacity: 1;
         transition: 0s;
-        box-shadow: 0 0 0 0 rgb(3, 236, 166);
+        box-shadow: 0 0 0 0 rgb(220, 32, 120);
     }
     .btn:active {
         top: 1px;

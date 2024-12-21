@@ -4,13 +4,13 @@ let config = [
         "src":
             [
                 {
-                    image: "https://via.placeholder.com/300/ff7f7f",
+                    image: "../assets/photo/easy/1.jpg",
                     text1: "文字組 1 - A",
                     text2: "文字組 1 - B",
                     text3: "文字組 1 - C"
                 },
                 {
-                    image: "https://via.placeholder.com/300/7fff7f",
+                    image: "../assets/photo/easy/2.jpg",
                     text1: "文字組 2 - A",
                     text2: "文字組 2 - B",
                     text3: "文字組 2 - C"
