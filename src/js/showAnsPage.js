@@ -5,22 +5,44 @@ let config = [
             [
                 {
                     image: "../assets/photo/easy/1.jpg",
-                    text1: "文字組 1 - A",
-                    text2: "文字組 1 - B",
-                    text3: "文字組 1 - C"
+                    text1: "2021年1月5日",
+                    text2: "板橋夏慕尼",
                 },
                 {
                     image: "../assets/photo/easy/2.jpg",
-                    text1: "文字組 2 - A",
-                    text2: "文字組 2 - B",
-                    text3: "文字組 2 - C"
+                    text1: "2021年2月5日",
+                    text2: "路地 氷の怪物",
                 },
                 {
-                    image: "https://via.placeholder.com/300/7f7fff",
-                    text1: "文字組 3 - A",
-                    text2: "文字組 3 - B",
-                    text3: "文字組 3 - C"
-                }
+                    image: "../assets/photo/easy/3.jpg",
+                    text1: "2021年12月23日",
+                    text2: "ABV 閣樓餐酒館",
+                },
+                {
+                    image: "../assets/photo/easy/4.jpg",
+                    text1: "2022年1月6日",
+                    text2: "焼肉の名門 赤虎",
+                },
+                {
+                    image: "../assets/photo/easy/5.jpg",
+                    text1: "2022年8月12日",
+                    text2: "長庚大學",
+                },
+                {
+                    image: "../assets/photo/easy/6.jpg",
+                    text1: "2023年1月5日",
+                    text2: "東西匯歐陸料理",
+                },
+                {
+                    image: "../assets/photo/easy/7.jpg",
+                    text1: "2023年5月17日",
+                    text2: "長庚大學",
+                },
+                {
+                    image: "../assets/photo/easy/8.jpg",
+                    text1: "2024年5月18日",
+                    text2: "長庚大學",
+                },
             ]
     },
     {
