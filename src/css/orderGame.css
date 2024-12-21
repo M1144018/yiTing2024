@@ -50,8 +50,8 @@ body {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(2, 180px); /* 每行 2 個卡片 */
-    gap: 20px;
+    grid-template-columns: repeat(2, 120px); /* 每行 2 個卡片 */
+    gap: 50px;
     justify-content: center; /* 卡片居中 */
     width: auto; /* 根據卡片寬度自適應 */
     padding-top: 3vh;
@@ -59,8 +59,8 @@ body {
 
 .card {
     position: relative;
-    width: 180px;
-    height: 120px;
+    width: 120px;
+    height: 80px;
     background-color: #3498db;
     color: white;
     display: flex;
@@ -70,6 +70,8 @@ body {
     cursor: pointer;
     border-radius: 8px;
     margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
     transition: transform 0.2s ease-in-out;
 }
 
