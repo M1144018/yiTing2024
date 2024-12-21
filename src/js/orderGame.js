@@ -158,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const img_refresh = document.getElementById("img-refresh")
     const img_present = document.getElementById("img-present")
+    const img_logo = document.getElementById("img-logo")
+    img_logo.src = `../assets/${level}-logo.png`
     if(systemLevel==2){
         img_present.hidden = false
         img_refresh.hidden = true
@@ -220,13 +222,13 @@ function doRefreshOrderList() {
 
 function checkAnswer() {
 
-    if (clickOrder.length !== 10 || leveData.ans.length !== 10) {
+    if (clickOrder.length !== 8 || leveData.ans.length !== 8) {
         alert("排順序要每個都按挖!");
     }
     else{
         let diffNumber = 0;
-        let diffIndex = 10;
-        for (let i = 0; i < 10; i++) {
+        let diffIndex = 8;
+        for (let i = 0; i < 8; i++) {
             if (clickOrder[i] !== leveData.ans[i]) {
                 diffNumber++;
                 diffIndex = diffIndex < i ? diffIndex:i;

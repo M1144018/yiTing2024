@@ -2,11 +2,12 @@ body {
     display: flex;
     flex-direction: column; /* 改為垂直排列 */
     background-image: url("../assets/background.jfif");
-    background-size: cover; 
+    background-size: 100% 100%; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 100vh;
-    margin: 0;
+    height: 100vh; 
+    margin: 0; 
+    width: 100%; 
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
@@ -41,13 +42,19 @@ body {
     padding: 1px;
 }
 
+
+.logo-img{
+    width: 180px;
+    height: 140px;
+}
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(2, 180px); /* 每行 2 個卡片 */
     gap: 20px;
     justify-content: center; /* 卡片居中 */
     width: auto; /* 根據卡片寬度自適應 */
-    padding-top: 6vh;
+    padding-top: 3vh;
 }
 
 .card {
