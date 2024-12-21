@@ -50,23 +50,45 @@ let config = [
         "src":
             [
                 {
-                    image: "https://via.placeholder.com/300/ff7f7f",
-                    text1: "文字組 1 - A",
-                    text2: "文字組 1 - B",
-                    text3: "文字組 1 - C"
+                    image: "../assets/photo/medium/9.jpg",
+                    text1: "2021年12月2日",
+                    text2: "中山商圈",
                 },
                 {
-                    image: "https://via.placeholder.com/300/7fff7f",
-                    text1: "文字組 2 - A",
-                    text2: "文字組 2 - B",
-                    text3: "文字組 2 - C"
+                    image: "../assets/photo/medium/10.jpg",
+                    text1: "2021年12月9日",
+                    text2: "信義A8商圈",
                 },
                 {
-                    image: "https://via.placeholder.com/300/7f7fff",
-                    text1: "文字組 3 - A",
-                    text2: "文字組 3 - B",
-                    text3: "文字組 3 - C"
-                }
+                    image: "../assets/photo/medium/11.jpg",
+                    text1: "2022年2月17日",
+                    text2: "臺北燈節",
+                },
+                {
+                    image: "../assets/photo/medium/12.jpg",
+                    text1: "2022年2月24日",
+                    text2: "桃園燈節-老街溪",
+                },
+                {
+                    image: "../assets/photo/medium/13.jpg",
+                    text1: "2022年11月22日",
+                    text2: "新北耶誕城",
+                },
+                {
+                    image: "../assets/photo/medium/14.jpg",
+                    text1: "2023年6月15日",
+                    text2: "有片森林「植一座咖啡館」",
+                },
+                {
+                    image: "../assets/photo/medium/15.jpg",
+                    text1: "2023年8月19日",
+                    text2: "Roller 186",
+                },
+                {
+                    image: "../assets/photo/medium/16.jpg",
+                    text1: "2023年10月14日",
+                    text2: "75度獴",
+                },
             ]
     },
     {
