@@ -135,9 +135,9 @@ body {
     text-align: center;
     height: 180px;
     transform: translate(-50%, -50%); /* 使元素精確居中 */
-    background-color: white; /* 背景顏色 */
+    background-color: #f5f5e7; /* 背景顏色 */
     padding: 20px;
-    border: 2px solid #007BFF; /* 外框顏色 */
+    border: 2px solid #ee8cd5; /* 外框顏色 */
     border-radius: 15px; /* 圓角效果 */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 陰影效果 */
     z-index: 999; /* 設置 z-index */
@@ -147,6 +147,7 @@ body {
   fieldset {
     border: none;
     padding: 0;
+    
   }
   
   legend {
@@ -165,7 +166,7 @@ body {
 .btn,
     .btn:focus {
         position: relative;
-        min-width: 100px;
+        min-width: 90px;
         background-color: black;
         border-radius: 4em;
         background-color: rgb(241, 205, 245);

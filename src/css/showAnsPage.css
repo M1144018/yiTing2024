@@ -24,11 +24,11 @@ body {
     padding: 20px;
     border: 2px solid #e6a4db;
     border-radius: 10px;
-    background-color: #e9b1f9;
+    background-color: #eed6f5;
 }
 .img-memory{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 150px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -51,6 +51,7 @@ body {
 .text-item {
     width: 80%; /* 調整寬度 */
     padding: 10px;
+    font-weight: bold;
     margin: 5px 0; /* 增加上下間距 */
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -79,7 +80,7 @@ body {
 .btn,
     .btn:focus {
         position: relative;
-        min-width: 200px;
+        min-width: 120px;
         background-color: black;
         border-radius: 4em;
         background-color: rgb(241, 205, 245);
@@ -89,7 +90,7 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         transition-duration: 0.4s;
-        padding: 10px 20px;
+        padding: 10px 40px;
         border: none;
     }
     .btn:hover {

@@ -13,8 +13,7 @@
         <img id="img-refresh" class="head-img" src="../assets/refresh-icon.png" onclick="doRefreshOrderList()">
         <img id="img-present" class="head-img" src="../assets/present-icon.png" onclick="doHintMode()" hidden>
     </div>
-    <div class="card-container" id ="card-container">
-    </div>
+    <div class="card-container" id ="card-container"></div>
     <div>
         <div class="btn-container">
             <button onclick="doRefreshOrderList()" class="btn">清空排序</button>
@@ -26,9 +25,9 @@
           <legend id = "ans-legend">這是第一排字</legend>
           <p id = "ans-textFirst" >這是第二排字</p>
           <p id = "ans-textSecond">這是第三排字</p>
-          <button id = "btn-again" onclick="doRefreshOrderList()">再一次</button>
-          <button id ="btn-home" onclick="backToHomePage()">回首頁</button>
-          <button id ="btn-picture"  onclick="nextBtnClick()" >回憶照片館</button>
+          <button id = "btn-again" class="btn"onclick="doRefreshOrderList()">再一次</button>
+          <button id ="btn-home"class="btn" onclick="backToHomePage()">回首頁</button>
+          <button id ="btn-picture" class="btn" onclick="nextBtnClick()" >我們的回憶</button>
         </fieldset>
       </div>
     <script src="../js/orderGame.js"></script>

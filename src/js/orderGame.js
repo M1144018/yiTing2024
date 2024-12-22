@@ -262,7 +262,7 @@ function checkAnswer() {
             btnAgain.hidden = true;
             btnPicture.hidden = false;
             ansLegend.innerText = "全部答對了~~"; 
-            ansTextFirst.innerText = `怡庭太厲害了!`; 
+            ansTextFirst.innerText = `❤️怡庭太厲害了!❤️`; 
             ansTextSecond.innerText = `第${systemLevel+1}個密碼為【${leveData.key}】`; 
 
         }
@@ -270,8 +270,8 @@ function checkAnswer() {
             btnAgain.hidden = false;
             btnPicture.hidden = true;
             ansLegend.innerText = "答錯了~~~~再加油一下!!!"; 
-            ansTextFirst.innerText = `答錯了:${diffNumber}個順序!`; 
-            ansTextSecond.innerText = `從第:${diffIndex+1}個開始錯的!`; 
+            ansTextFirst.innerText = `有${diffNumber}個順序是錯的!`; 
+            ansTextSecond.innerText = `從第${diffIndex+1}個開始錯的!`; 
         }
     }
 
