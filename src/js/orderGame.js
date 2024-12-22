@@ -1,4 +1,6 @@
 
+let hard_hint_count=0;
+let hard_hint_list=[4,5,7,8]
 let config = [
     {
         "model":"easy",
@@ -13,7 +15,7 @@ let config = [
             { "img": "../assets/photo/easy/7.jpg", "order": 7 },
             { "img": "../assets/photo/easy/8.jpg", "order": 8 },
           ],
-        "key": 7
+        "key": 1
     
     },
     {
@@ -29,23 +31,29 @@ let config = [
             { "img": "../assets/photo/medium/15.jpg", "order": 7 },
             { "img": "../assets/photo/medium/16.jpg", "order": 8 },
           ],
-        "key": 3
+        "key": 2
     
     },
     {
         "model":"hard",
         "ans":['1','2','3','4','5','6','7','8'],
         "src": [
-            { "img": "", "order": 1 },
-            { "img": "", "order": 2 },
-            { "img": "", "order": 3 },
-            { "img": "", "order": 4 },
-            { "img": "", "order": 5 },
-            { "img": "", "order": 6 },
-            { "img": "", "order": 7 },
-            { "img": "", "order": 8 },
+            { "img": `../assets/photo/hard/17d.jpg`, "order": 1 },
+            { "img": `../assets/photo/hard/18d.jpg`, "order": 2 },
+            { "img": `../assets/photo/hard/19d.jpg`, "order": 3 },
+            { "img": `../assets/photo/hard/20d.jpg`, "order": 4 },
+            { "img": `../assets/photo/hard/21d.jpg`, "order": 5 },
+            { "img": `../assets/photo/hard/22d.jpg`, "order": 6 },
+            { "img": `../assets/photo/hard/23d.jpg`, "order": 7 },
+            { "img": `../assets/photo/hard/24d.jpg`, "order": 8 },
           ],
-        "key": 5
+        "half_src":[
+            "../assets/photo/hard/20o.jpg",
+            "../assets/photo/hard/21o.jpg",
+            "../assets/photo/hard/23o.jpg",
+            "../assets/photo/hard/24o.jpg",
+        ],
+        "key": 3
     
     }
 ]
@@ -54,6 +62,7 @@ let clickOrder = []; // 用來紀錄點擊順序的陣列
 let systemLevel = 0;
 let level ='';
 let leveData ="";
+let presentLabel;
 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -164,6 +173,11 @@ document.addEventListener('DOMContentLoaded', () => {
         img_present.hidden = false
         img_refresh.hidden = true
     }
+
+    presentLabel = document.createElement('div');
+    presentLabel.classList.add('order-label');
+    presentLabel.textContent = hard_hint_count
+    img_present.appendChild(presentLabel)
 });
 
 // 更新卡片上的順序標籤
@@ -271,5 +285,23 @@ function doJpAnsPage(level){
     setTimeout(() => {
         window.location.href = `../html/showAnsPage.html?level=${level}`;
     },800)
+}
+function doHintMode(){
+    if(hard_hint_count>3){
+        alert("紹宇應該畫的很好吧!不需要提示了吧!")
+        return;
+    }
+    let cards = document.querySelectorAll('.card');
+    console.log(clickOrder)
+    for (const card of cards) {
+        const img = card.querySelector("img");
+        const cardNumber = card.getAttribute("cardOrder");
+        if(cardNumber==hard_hint_list[hard_hint_count]){
+            img.src = leveData.half_src[hard_hint_count]
+            hard_hint_count++
+            break;
+        }
+
+    }
 }
 
