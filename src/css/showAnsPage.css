@@ -10,6 +10,8 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     width: 100%; 
+    padding: 0; /* 移除預設內距 */
+    overflow-x: hidden; /* 禁止水平滾動 */
 }
 
 .container {
