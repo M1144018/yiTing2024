@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = document.createElement("img");
         img.src = item.img;
         img.alt = `Image ${item.order}`;
+        img.setAttribute("loading", "eager");
 
         div.appendChild(img);
         cardContainer.appendChild(div);
