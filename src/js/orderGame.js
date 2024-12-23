@@ -22,14 +22,14 @@ let config = [
         "model":"medium",
         "ans":['1','2','3','4','5','6','7','8'],
         "src": [
-            { "img": "../assets/photo/medium/9.jpg", "order": 1 },
-            { "img": "../assets/photo/medium/10.jpg", "order": 2 },
-            { "img": "../assets/photo/medium/11.jpg", "order": 3 },
-            { "img": "../assets/photo/medium/12.jpg", "order": 4 },
-            { "img": "../assets/photo/medium/13.jpg", "order": 5 },
-            { "img": "../assets/photo/medium/14.jpg", "order": 6 },
-            { "img": "../assets/photo/medium/15.jpg", "order": 7 },
-            { "img": "../assets/photo/medium/16.jpg", "order": 8 },
+            { "img": "../assets/photo/medium/9.webp", "order": 1 },
+            { "img": "../assets/photo/medium/10.webp", "order": 2 },
+            { "img": "../assets/photo/medium/11.webp", "order": 3 },
+            { "img": "../assets/photo/medium/12.webp", "order": 4 },
+            { "img": "../assets/photo/medium/13.webp", "order": 5 },
+            { "img": "../assets/photo/medium/14.webp", "order": 6 },
+            { "img": "../assets/photo/medium/15.webp", "order": 7 },
+            { "img": "../assets/photo/medium/16.webp", "order": 8 },
           ],
         "key": 2
     
@@ -38,20 +38,20 @@ let config = [
         "model":"hard",
         "ans":['1','2','3','4','5','6','7','8'],
         "src": [
-            { "img": `../assets/photo/hard/17d.jpg`, "order": 1 },
-            { "img": `../assets/photo/hard/18d.jpg`, "order": 2 },
-            { "img": `../assets/photo/hard/19d.jpg`, "order": 3 },
-            { "img": `../assets/photo/hard/20d.jpg`, "order": 4 },
-            { "img": `../assets/photo/hard/21d.jpg`, "order": 5 },
-            { "img": `../assets/photo/hard/22d.jpg`, "order": 6 },
-            { "img": `../assets/photo/hard/23d.jpg`, "order": 7 },
-            { "img": `../assets/photo/hard/24d.jpg`, "order": 8 },
+            { "img": `../assets/photo/hard/17d.webp`, "order": 1 },
+            { "img": `../assets/photo/hard/18d.webp`, "order": 2 },
+            { "img": `../assets/photo/hard/19d.webp`, "order": 3 },
+            { "img": `../assets/photo/hard/20d.webp`, "order": 4 },
+            { "img": `../assets/photo/hard/21d.webp`, "order": 5 },
+            { "img": `../assets/photo/hard/22d.webp`, "order": 6 },
+            { "img": `../assets/photo/hard/23d.webp`, "order": 7 },
+            { "img": `../assets/photo/hard/24d.webp`, "order": 8 },
           ],
         "half_src":[
-            "../assets/photo/hard/20o.jpg",
-            "../assets/photo/hard/21o.jpg",
-            "../assets/photo/hard/23o.jpg",
-            "../assets/photo/hard/24o.jpg",
+            "../assets/photo/hard/20o.webp",
+            "../assets/photo/hard/21o.webp",
+            "../assets/photo/hard/23o.webp",
+            "../assets/photo/hard/24o.webp",
         ],
         "key": 3
     
@@ -168,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const img_refresh = document.getElementById("img-refresh")
     const img_present = document.getElementById("img-present")
+    const present_div = document.getElementById("present-div")
     const img_logo = document.getElementById("img-logo")
     img_logo.src = `../assets/${level}-logo.png`
     if(systemLevel==2){
@@ -177,8 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     presentLabel = document.createElement('div');
     presentLabel.classList.add('order-label');
-    presentLabel.textContent = hard_hint_count
-    img_present.appendChild(presentLabel)
+    presentLabel.textContent = 4-hard_hint_count
+    present_div.appendChild(presentLabel)
 });
 
 // 更新卡片上的順序標籤
@@ -208,6 +209,7 @@ function updateCardOrderLabels() {
             }
         }
     });
+
 }
 
 function backToHomePage(){
@@ -304,5 +306,8 @@ function doHintMode(){
         }
 
     }
+    let present_div = document.getElementById("present-div")
+    let present_time = present_div.querySelector('.order-label');
+    present_time.textContent = 4-hard_hint_count
 }
 
