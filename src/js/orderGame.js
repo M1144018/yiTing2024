@@ -174,12 +174,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if(systemLevel==2){
         img_present.hidden = false
         img_refresh.hidden = true
+        presentLabel = document.createElement('div');
+        presentLabel.classList.add('order-label');
+        presentLabel.textContent = 4-hard_hint_count
+        present_div.appendChild(presentLabel)
     }
-
-    presentLabel = document.createElement('div');
-    presentLabel.classList.add('order-label');
-    presentLabel.textContent = 4-hard_hint_count
-    present_div.appendChild(presentLabel)
 });
 
 // 更新卡片上的順序標籤

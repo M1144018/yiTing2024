@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-image: url("../assets/background.jfif");
+    background-attachment: fixed; /* 使背景固定，滾動時不移動 */
     background-size: 100% 100%; 
     background-position: center; 
     background-repeat: no-repeat; 

@@ -1,11 +1,12 @@
 body {
     display: flex;
-    flex-direction: column; /* 改為垂直排列 */
+    flex-direction: column; /* 垂直排列 */
     background-image: url("../assets/background.jfif");
-    background-size: 100% 100%; 
+    background-size: cover; /* 背景圖片會根據畫面自動縮放 */
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 100vh; 
+    background-attachment: fixed; /* 使背景固定，滾動時不移動 */
+    min-height: 100vh; /* 確保背景延伸至整個螢幕高度 */
     margin: 0; 
     width: 100%; 
     background-color: #f0f0f0;
