@@ -6,14 +6,14 @@ let config = [
         "model":"easy",
         "ans":['1','2','3','4','5','6','7','8'],
         "src": [
-            { "img": "../assets/photo/easy/1.jpg", "order": 1 },
-            { "img": "../assets/photo/easy/2.jpg", "order": 2 },
-            { "img": "../assets/photo/easy/3.jpg", "order": 3 },
-            { "img": "../assets/photo/easy/4.jpg", "order": 4 },
-            { "img": "../assets/photo/easy/5.jpg", "order": 5 },
-            { "img": "../assets/photo/easy/6.jpg", "order": 6 },
-            { "img": "../assets/photo/easy/7.jpg", "order": 7 },
-            { "img": "../assets/photo/easy/8.jpg", "order": 8 },
+            { "img": "../assets/photo/easy/1.webp", "order": 1 },
+            { "img": "../assets/photo/easy/2.webp", "order": 2 },
+            { "img": "../assets/photo/easy/3.webp", "order": 3 },
+            { "img": "../assets/photo/easy/4.webp", "order": 4 },
+            { "img": "../assets/photo/easy/5.webp", "order": 5 },
+            { "img": "../assets/photo/easy/6.webp", "order": 6 },
+            { "img": "../assets/photo/easy/7.webp", "order": 7 },
+            { "img": "../assets/photo/easy/8.webp", "order": 8 },
           ],
         "key": 1
     
